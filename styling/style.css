@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Raleway;
+	color: black;
+}
+
+/*-----------NAV BAR STYLING----------*/
+.nav-bar{
+	background-color: white;
+	height: 85px;
+	position: relative;
+	border-bottom: 2px solid black;
+}
+.nav-conatiner{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+.web-logo{
+	position: absolute;
+	top: 60%;
+	transform: translateY(-60%);
+}
+.web-logo img{
+	height: 40px;
+}
+.nav-links{
+	position: absolute;
+	top:50% ;
+	transform: translateY(-60%);
+	right: 2%;
+}
+.nav-lists{
+	list-style: none;
+}
+.nav-link{
+	border: 3px solid transparent;
+	display: inline;
+	padding: 5px 5vh;
+	transition: all 0.4s linear;
+}
+.nav-link a{
+	text-decoration: none;	
+}
+#sign-up-icon{
+	margin: 3px 10px;
+	display: inline;
+	padding: 5px 0vh;
+}
+.material-icons{
+	transform: translateY(30%);
+}
+.nav-link:hover{
+	border-bottom: 3px solid black;
+	border-radius: 5px;
+}
+
+/*sign up section*/
+.signup{
+	display: inline;
+	background-color: white;
+	position: fixed;
+	top: 85px;
+	right: 0px;
+	z-index: 4;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form{
+	height: 300px;
+	width: 250px;
+	padding: 10px 20px;
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	grid-gap: 10px;
+	align-content: space-around;
+}
+.input-field{
+	padding: 4px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+}
+.submit-btn{
+	padding: 20px 0px;
+	border: none;
+	color: white;
+	background-color: black;
+}
+.sign-in{
+	text-align: center;
+	font-size: 14px;
+}
+/*-----------NAV BAR STYLING END----------*/
