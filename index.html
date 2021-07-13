@@ -19,10 +19,10 @@
 			</div>
 			<div class="nav-links">
 				<ul class="nav-lists"> 
-					<li class="nav-link"><a href="#">Home</a></li>
 					<li class="nav-link"><a href="#">News</a></li>
-					<li class="nav-link"><a href="#">Products</a></li>
-					<li id="sign-up-icon"><a href="#"><i class="material-icons">
+					<li class="nav-link"><a href="#">Contacts</a></li>
+					<li class="nav-link"><a href="#products">Products</a></li>
+					<li id="sign-up-icon"><a href="#" onclick="toggle();"><i class="material-icons">
 					account_circle</i></a></li>
 				</ul>
 			</div>
@@ -30,16 +30,110 @@
 	</nav>
 	<section class="signup"> 
 		<form>
-			<input class="input-field" type="text" placeholder="First Name">
-			<input class="input-field" type="text" placeholder="Last Name">
-			<input class="input-field" type="email" placeholder="example12@gmail.com">
-			<input class="input-field" type="password" placeholder="Password">
+			<input class="input-field" type="text" placeholder="First Name" required>
+			<input class="input-field" type="text" placeholder="Last Name" required>
+			<input class="input-field" type="email" placeholder="example12@gmail.com" required>
+			<input class="input-field" type="password" placeholder="Password" required>
 			<input class="submit-btn" type="submit" value="Sign up">
 			<div class="sign-in">Already have account?<a href="#"> Log in</a></div>
 		</form>
 	</section>
+
 	<!-- navigation bar ends -->
 
+	<!-- intro - page -->
+	<div id="slider">
+		<figure>
+			<img src="imgs/images/img3.png">
+			<img src="imgs/images/img2.png">
+		</figure>
+	</div>
+	<!-- intro - page end-->
 
+
+	<!-- our products section -->
+	<div class="products" id="products">
+		<div class="container">
+			<div class="products-title">
+				<h1>Our Products</h1>
+			</div>
+			<div class="row">
+
+				<div class="product" id="product1">
+					<div class="product-img">
+						<img src="imgs/images/img2.png">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>GigaByte Presents Mobile</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="#">Buy now</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="product" id="product1">
+					<div class="product-img">
+						<img src="imgs/images/img.png">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>GigaByte Presents Laptop</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="#">Buy now</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="product" id="product1">
+					<div class="product-img">
+						<img src="imgs/images/img3.png">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>GigaByte Presents TV</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="#">Buy now</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="product" id="product1">
+					<div class="product-img">
+						<img src="imgs/images/img2.png">
+					</div>
+					<div class="product-details">
+						<div class="mobile">
+							<h2>GigaByte Presents Mobile</h2>
+						</div>
+						<div class="Buy-btn">
+							<a href="#">Buy now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- our products section -->
+
+	<!-- footer section -->
+	<footer>
+		<div class="footer-row">
+			<div class="footer-col" id="footer-col1">
+				s
+			</div>
+			<div class="footer-col" id="footer-col2">
+				s
+			</div>
+			<div class="footer-col" id="footer-col3">
+				s
+			</div>
+		</div>
+	</footer>
+	<!-- footer section -->
+	
 </body>
 </html>
