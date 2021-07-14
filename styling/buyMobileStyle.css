@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.nav{
+	margin-top: 20px;
+	background-color: white;
+	width: 100vw;
+}
+.rtn-btn a{
+	padding: 20px 30px;
+	color: black;
+}
+.rtn-btn a:hover{
+	background-color: black	;
+	color: white;
+}
+.container{
+	margin: 10px 20px;
+}
+.row{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: space-between;
+}
+.img , .details{
+	border: 1px solid black;
+}
