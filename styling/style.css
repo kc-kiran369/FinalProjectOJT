@@ -8,6 +8,7 @@
 	font-family: Raleway;
 	color: black;
 	text-decoration: none;
+	list-style: none;
 }
 html{
 	scroll-behavior: smooth;
@@ -172,12 +173,35 @@ form{
 
 /*footer and links*/
 
-.footer-row{
+#footer-row{
 	display: grid;
-	grid-template-columns: repeat(3, auto);
+	grid-template-columns: repeat(4, auto);
 	justify-content: space-around;
+	padding: 30px 5px;
+	/*align-content: ;*/
 }
-.footer-col{
-	border: 1px solid white;
+.footer-col ul li a,.AboutUsP{
+	padding: 5px 0px;
+	color: white;
+}
+.F-title h2{
+	padding-bottom: 20px ;
+	color: white;
+}
+.Fform input{
+	height: 40px;
+	width: 60%;
+}
+.Fbtn{
+	padding: 10px 20px; 
+	background-color: #AD081B;
+	border: none;
+	color: white;
 }
 /*footer end*/
+
+/*cookie section*/
+.cookie{
+	background-color: white;
+	padding: 10px 20px;
+}
