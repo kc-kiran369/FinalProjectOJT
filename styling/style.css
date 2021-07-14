@@ -146,7 +146,7 @@ form{
 	text-align: center;
 }
 .product:hover{
-	box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 .product-img img{
 	width: 396px;
@@ -180,11 +180,16 @@ form{
 	padding: 30px 5px;
 	/*align-content: ;*/
 }
-.footer-col ul li a,.AboutUsP{
-	padding: 5px 0px;
+.footer-col ul li a{
 	color: white;
 }
-.F-title h2{
+.footer-col ul li a:hover{
+	text-decoration: underline;
+}
+.footer-col ul li{
+	padding: 6px;
+}
+.F-title h2 ,.AboutUsP{
 	padding-bottom: 20px ;
 	color: white;
 }
