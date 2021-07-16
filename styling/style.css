@@ -105,6 +105,35 @@ form{
 /*intro page*/
 #slider{
 	overflow: hidden;
+	position: relative;
+}
+.ss{
+	position: absolute;
+ 	top: 58%;
+ 	left: 18%;
+ 	transform: translate(-50%, -50%);
+}
+.ss a{
+	background-color: yellow;
+	border-radius: 30px;
+	padding: 15px 30px;
+	color: black;
+}
+.arrow{
+	position: absolute;
+ 	top: 50%;
+ 	right: 2%;
+ 	transform: translate(-50%, -50%);
+}
+.arrow h2{
+	border-radius: 50%;
+	padding:0px 5px ;
+	background-color: white;
+	color: black;
+}
+.arrow h2:hover{
+	transition: background-color 0.2s linear;
+	background-color: rgb(100, 100, 100);
 }
 #slider figure{
 	position: relative;
