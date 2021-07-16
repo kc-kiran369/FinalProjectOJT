@@ -28,8 +28,8 @@
 
 
 .container{
-	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
-	/*background-color: yellow;*/
+	/*background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));*/
+	background-color: yellow;
 	height: 100vh;
 	background-size: cover;
 }
