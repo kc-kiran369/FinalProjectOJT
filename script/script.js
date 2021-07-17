@@ -34,7 +34,7 @@ function hideSign(){
 var toggles = true;
 function changeImg(){
 	if(toggles === true){
-		document.getElementById('wallpaper').src = "imgs/images/mobile2.png";
+		document.getElementById('wallpaper').src = "imgs/images/mobile3.png";
 	}
 	else{
 		document.getElementById('wallpaper').src = "imgs/images/laptop1.png";
