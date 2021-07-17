@@ -45,13 +45,13 @@ html{
 	border: 3px solid transparent;
 	display: inline;
 	transition: all 0.4s linear;
+	padding-bottom: 10px;
 }
 .nav-link a{
-	padding: 5px 5vh;
-	text-decoration: none;	
+	padding: 10px 20px ;
 }
 .nav-link:hover{
-	border-bottom: 3px solid black;
+	border-bottom: 2px solid black;
 	border-radius: 5px;
 }
 #sign-up-icon{
@@ -63,6 +63,7 @@ html{
 	transform: translateY(30%);
 }
 
+
 /*sign up section*/
 .signup{
 	display: none;
@@ -73,8 +74,26 @@ html{
 	z-index: 4;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-form{
+.signin{
+	display: none;
+	background-color: white;
+	position: fixed;
+	top: 85px;
+	right: 0px;
+	z-index: 4;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form1{
 	height: 300px;
+	width: 250px;
+	padding: 10px 20px;
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	grid-gap: 10px;
+	align-content: space-around;
+}
+.form2{
+	height: 240px;
 	width: 250px;
 	padding: 10px 20px;
 	display: grid;
@@ -98,6 +117,7 @@ form{
 	text-align: center;
 	font-size: 14px;
 }
+
 /*-----------NAV BAR STYLING END----------*/
 
 
@@ -114,7 +134,7 @@ form{
  	transform: translate(-50%, -50%);
 }
 .ss a{
-	background-color: yellow;
+	background-color: #007AEF;
 	border-radius: 30px;
 	padding: 15px 30px;
 	color: black;
@@ -123,11 +143,11 @@ form{
 	position: absolute;
  	top: 50%;
  	right: 2%;
- 	transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);	
 }
 .arrow h2{
-	border-radius: 50%;
 	padding:0px 5px ;
+	border-radius: 50%;
 	background-color: white;
 	color: black;
 }
@@ -167,7 +187,6 @@ form{
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-gap: 10px;
-	/*justify-content: space-evenly;*/
 }
 .product{
 	padding: 30px ;
@@ -200,13 +219,11 @@ form{
 
 
 /*footer and links*/
-
 #footer-row{
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	justify-content: space-around;
 	padding: 30px 5px;
-	/*align-content: ;*/
 }
 .footer-col ul li a{
 	color: white;
@@ -234,7 +251,8 @@ form{
 /*footer end*/
 
 /*cookie section*/
-.cookie{
+.cookieT{
 	background-color: white;
 	padding: 10px 20px;
 }
+/*cookie section end*/

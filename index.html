@@ -8,7 +8,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<!-- #161619 -->
 <body style="background-color: #161619;">
 
 	<!-- navigation bar -->
@@ -31,16 +30,24 @@
 		</div>
 	</nav>
 	<section class="signup"> 
-		<form>
+		<form class="form1">
 			<input class="input-field" type="text" placeholder="First Name" required>
 			<input class="input-field" type="text" placeholder="Last Name" required>
 			<input class="input-field" type="email" placeholder="example12@gmail.com" required>
 			<input class="input-field" type="password" placeholder="Password" required>
 			<input class="submit-btn" type="submit" value="Sign up">
-			<div class="sign-in">Already have account?<a href="#"> Log in</a></div>
+			<div class="sign-in">Already have account?<a href="#" onclick="hideSign();"> Log in</a></div>
 		</form>
 	</section>
 
+	<section class="signin"> 
+		<form class="form2">
+			<input class="input-field" type="email" placeholder="example12@gmail.com" required>
+			<input class="input-field" type="password" placeholder="Password" required>
+			<input class="submit-btn" type="submit" value="Log in">
+			<div class="sign-in">Dont have a account? <a href="#" onclick="hideSign();">Sign up</a></div>
+		</form>
+	</section>
 	<!-- navigation bar ends -->
 
 	<!-- intro - page -->
@@ -65,7 +72,6 @@
 				<h1>Our Products</h1>
 			</div>
 			<div class="row">
-
 				<div class="product" id="product1">
 					<div class="product-img">
 						<img src="imgs/images/mobile1.png">
@@ -86,7 +92,7 @@
 					</div>
 					<div class="product-details">
 						<div class="mobile">
-							<h2>GigaByte Presents Laptop</h2>
+							<h2>GigaByte Notepad Laptop</h2>
 						</div>
 						<div class="Buy-btn">
 							<a href="pages/buyMobile.html" target="_blank">Buy now</a>
@@ -100,7 +106,7 @@
 					</div>
 					<div class="product-details">
 						<div class="mobile">
-							<h2>GigaByte Presents TV</h2>
+							<h2>GigaByte FHD TV</h2>
 						</div>
 						<div class="Buy-btn">
 							<a href="pages/buyMobile.html" target="_blank">Buy now</a>
@@ -125,6 +131,7 @@
 		</div>
 	</div>
 	<!-- our products section -->
+
 
 	<!-- footer section -->
 	<footer>
@@ -175,11 +182,12 @@
 			</div>
 		</div>
 	</footer>
-	<!-- footer section -->
+	<!-- footer section end-->
 
-	<div class="cookie">
+	<!-- cookie text -->
+	<div class="cookieT">
 		<h4>This website uses cookies to improve your experience. We'll assume you're okay with this.</h4>
 	</div>
-	
+	<!-- cookie text end-->
 </body>
 </html>
