@@ -44,18 +44,19 @@ function hasSignedin(){
 }
 
 
-// //delete signup info
-// function deleteInfo() {
+//delete signup info
+//actually changes value to none
+function deleteInfo() {
 
-// 	// localStorage.removeItem("name");
-// 	// localStorage.removeItem("Fname");
-// 	// localStorage.removeItem("Lname");
-// 	// localStorage.removeItem("password");
-// 	// localStorage.removeItem("email");
+	localStorage.setItem("name" , "none");
+	localStorage.setItem("Fname" ,"none");
+	localStorage.setItem("Lname" ,"none");
+	localStorage.setItem("email" ,"none");
+	localStorage.setItem("password" ,"none");
 
-// 	document.querySelector(".hasSigned").style.display = "none"
-// 	document.querySelector(".signup").style.display = "inline"
-// }
+	document.querySelector(".hasSigned").style.display = "none"
+	document.querySelector(".signup").style.display = "inline"
+}
 
 
 //sign up
