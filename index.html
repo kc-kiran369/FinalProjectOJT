@@ -23,7 +23,7 @@
 					<li class="nav-link"><a href="#">News</a></li>
 					<li class="nav-link"><a href="#footer-row">Contacts</a></li>
 					<li class="nav-link"><a href="#products">Products</a></li>
-					<li id="sign-up-icon"><a href="#" onclick="toggle();"><i class="material-icons">
+					<li id="sign-up-icon"><a href="#" onclick="openmenu();"><i class="material-icons">
 					account_circle</i></a></li>
 				</ul>
 			</div>
@@ -31,11 +31,11 @@
 	</nav>
 	<section class="signup"> 
 		<form class="form1">
-			<input class="input-field" type="text" placeholder="First Name" required>
-			<input class="input-field" type="text" placeholder="Last Name" required>
-			<input class="input-field" type="email" placeholder="example12@gmail.com" required>
-			<input class="input-field" type="password" placeholder="Password" required>
-			<input class="submit-btn" type="submit" value="Sign up">
+			<input class="input-field" id="Fname" type="text" placeholder="First Name" required>
+			<input class="input-field" id="Lname" type="text" placeholder="Last Name" required>
+			<input class="input-field" id="Femail" type="email" placeholder="example12@gmail.com" required>
+			<input class="input-field" id="Fpass" type="password" placeholder="Password" required>
+			<input class="submit-btn" id="Fsub" type="submit" value="Sign up" onclick="signup();" >
 			<div class="sign-in">Already have account?<a href="#" onclick="hideSign();"> Log in</a></div>
 		</form>
 	</section>
@@ -46,6 +46,12 @@
 			<input class="input-field" type="password" placeholder="Password" required>
 			<input class="submit-btn" type="submit" value="Log in">
 			<div class="sign-in">Dont have a account? <a href="#" onclick="hideSign();">Sign up</a></div>
+		</form>
+	</section>
+
+	<section class="hasSigned"> 
+		<form class="form3">
+			<h4 class="hasSignText">noone has signed in</h4>
 		</form>
 	</section>
 	<!-- navigation bar ends -->
@@ -64,6 +70,10 @@
 	</div>
 	<!-- intro - page end-->
 
+	<!-- promotions -->
+	<div class="promoImg">
+		s
+	</div>
 
 	<!-- our products section -->
 	<div class="products" id="products">
