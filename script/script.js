@@ -4,7 +4,7 @@ var name = "none";
 function openmenu(){
 	name = localStorage.getItem("name");
 
-	if(name=="none"){
+	if(name=="none" || name==" "){
 			toggle();
 	}
 	else{
@@ -15,17 +15,19 @@ function openmenu(){
 
 //function for toggling between signup and login section 
 function toggle() {
-
 	var sign = document.querySelector(".signup");
 	var signin = document.querySelector(".signin");
 
-	if( signin.style.display != "inline" ){
+	if( signin.style.display != "inline"){
 		if(sign.style.display == "inline")
 		{
 			sign.style.display = "none"
 		}else{
 			sign.style.display ="inline"
 		}
+	}
+	else{
+		signin.style.display = "none"
 	}
 }
 
@@ -34,12 +36,14 @@ function hasSignedin(){
 	var hasSignVar = document.querySelector(".hasSigned");
 	var displayText = name +" has signed in";
 	document.querySelector(".hasSignText").innerHTML = displayText;
-
-	if(hasSignVar.style.display == "inline")
+	if(name!=" ")
 	{
-		hasSignVar.style.display = "none"
-	}else{
-		hasSignVar.style.display ="inline"
+		if(hasSignVar.style.display == "inline")
+		{
+			hasSignVar.style.display = "none"
+		}else{
+			hasSignVar.style.display ="inline"
+		}
 	}
 }
 
@@ -69,13 +73,18 @@ function signup(){
 	var password = document.getElementById('Fpass').value;
 	name = Fname+" "+Lname;
 
-	// set storage
-	localStorage.setItem("name" , name);
-	localStorage.setItem("Fname" , Fname);
-	localStorage.setItem("Lname" , Lname);
-	localStorage.setItem("email" , email);
-	localStorage.setItem("password" , password);
-	document.querySelector(".signup").style.display = "none"
+	if(name!=" ")
+	{
+		// set storage
+		localStorage.setItem("name" , name);
+		localStorage.setItem("Fname" , Fname);
+		localStorage.setItem("Lname" , Lname);
+		localStorage.setItem("email" , email);
+		localStorage.setItem("password" , password);
+		document.querySelector(".signup").style.display = "none"
+		// document.querySelector(".hasSigned").style.display = "inline"
+		openmenu();
+	}
 }
 
 // function for hiding signup section 
@@ -94,7 +103,6 @@ function hideSign(){
 
 
 
-
 // function for changing image of front page
 var toggles = true;
 function changeImg(){
@@ -105,4 +113,14 @@ function changeImg(){
 		document.getElementById('wallpaper').src = "imgs/images/laptop1.png";
 	}
 	toggles = !toggles;
+}
+
+
+
+
+
+//for credit card information
+
+function view_purchase_section() {
+	alert("yup its working");
 }

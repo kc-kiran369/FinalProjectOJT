@@ -44,7 +44,7 @@ html{
 .nav-link{
 	border: 3px solid transparent;
 	display: inline;
-	transition: all 0.4s linear;
+	transition: border-bottom 0.4s linear;
 	padding-bottom: 10px;
 }
 .nav-link a{
@@ -257,7 +257,7 @@ html{
 	padding: 30px 5px;
 }
 .footer-col ul li a{
-	color: white;
+	color: black;
 }
 .footer-col ul li a:hover{
 	text-decoration: underline;
@@ -267,7 +267,7 @@ html{
 }
 .F-title h2 ,.AboutUsP{
 	padding-bottom: 20px ;
-	color: white;
+	color: black;
 }
 .Fform input{
 	height: 40px;
@@ -283,7 +283,7 @@ html{
 
 /*cookie section*/
 .cookieT{
-	background-color: white;
+	background-color: yellow;
 	padding: 10px 20px;
 }
 /*cookie section end*/

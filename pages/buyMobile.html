@@ -4,39 +4,45 @@
 	<meta charset="utf-8">
 	<title>buy moblie</title>
 	<link rel="stylesheet" type="text/css" href="../styling/buyMobileStyle.css">
+	<link rel="stylesheet" type="text/css" href="../styling/style.css">
+	<script src="../script/script.js"></script>
 </head>
 <body>	
 	<div class="nav">
 		<div class="rtn-btn">
-			<a href="../index.html" target="_blank">↩ Home</a>
+			<a href="../index.html">↩ Home</a>
 		</div>
 	</div>
 
 	
-	<div class="container">
+	<div class="Container">
 		<div class="row">
 			<div class="image">
 				<div class="images">
-					<img src="../imgs/images/mobile1.png">
+					<img src="../imgs/images/laptop2.png">
 				</div>
 			</div>
 			<div class="details">
 				<div class="title">
 					<h2>GigaByte Redwave P110</h2>
-					<p class="paragraph">
-						The new GigaByte mobile is technical revolution. This mobile offers new innovative features , optmized performance , longer battery life , futuristic user experience.
-					</p>
-					<h2>Specification</h2>
 					<ul>
-						<li>1920x1080 6.7" HDR Display</li>
-						<li>Octa-core (6x1.8 GHz)</li>
-						<li>128GB 6GB RAM</li>
-						<li>165.8 x 76.7 x 8.8 mm</li>
-						<li>64 MP, f/1.9</li>
+						<li>- 1920x1080 6.7" HDR Display</li>
+						<li>- Octa-core (6x1.8 GHz)</li>
+						<li>- 128GB 6GB RAM</li>
+						<li>- 165.8 x 76.7 x 8.8 mm</li>
+						<li>- 64 MP, f/1.9</li>
+						<li><strong>30,000 NRP</strong></li>
 					</ul>
 					<div class="proceed">
-						<input class="num" type="number" value="1" min="1" max="5">
-						<input class="btn" type="button" value="Buy">
+						<div>
+							<label>Quantity </label><input class="num" type="number" value="1" min="1" max="5">
+						</div>
+						<div>
+							<label>Select Color </label><input class="col" type="color" value="#FF0000">
+						</div>
+						<div>
+							<input class="btn" type="button" value="Buy" onclick="view_purchase_section();">
+						</div>
 					</div>
 				</div>
 				
@@ -44,5 +50,63 @@
 		</div>
 	</div>
 
+
+	<!-- purchase section -->
+	<div>
+		
+	</div>
+	<!-- purchase section -->
+
+
+	<!-- footer section -->
+	<footer>
+		<div id="footer-row">
+
+			<div class="footer-col" id="footer-col1">
+				<div class="F-title" id="About">
+					<h2>About us</h2>
+				</div>
+				<div class="AboutUsP">
+					Lorem ipsum dolor sit amet, consectetur .
+					<br>HLorem ipsum dolor sit amet, consectetur adipisicing  <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit 
+				</div> 
+			</div>
+
+			<div class="footer-col" id="footer-col2">
+				<div class="F-title" id="Contact">
+					<h2>Contact</h2>
+				</div>
+				<ul>
+					<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+					<li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+					<li><a href="https://www.twittrer.com/" target="_blank">Twitter</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col" id="footer-col3">
+				<div class="F-title" id="Company">
+					<h2>Company</h2>
+				</div>
+				<ul>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Career</a></li>
+				</ul>
+			</div>
+			<div class="footer-col" id="footer-col4">
+				<div class="F-title" id="receive">
+					<h2>Receive Updates</h2>
+				</div>
+				<div class="Receive">
+					<div class="Fform">
+						<input type="email" required placeholder="example12@gmail.com">
+						<a href="#" class="Fbtn">Email</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer section end-->
 </body>
 </html>
