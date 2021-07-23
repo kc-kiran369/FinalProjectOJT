@@ -35,24 +35,15 @@
 			<input class="input-field" id="Lname" type="text" placeholder="Last Name" required>
 			<input class="input-field" id="Femail" type="email" placeholder="example12@gmail.com" required>
 			<input class="input-field" id="Fpass" type="password" placeholder="Password" required>
-			<input class="submit-btn" id="Fsub" type="submit" value="Sign up" onclick="signup();" >
-			<div class="sign-in">Already have account?<a href="#" onclick="hideSign();"> Log in</a></div>
+			<input class="submit-btn" id="Fsub" type="submit" value="Sign up" onclick="signup();">
+			<input class="close-btn" value="Close" onclick="toggle();">
 		</form>
 	</section>
-
-	<section class="signin"> 
-		<form class="form2">
-			<input class="input-field" type="email" placeholder="example12@gmail.com" required>
-			<input class="input-field" type="password" placeholder="Password" required>
-			<input class="submit-btn" type="submit" value="Log in">
-			<div class="sign-in">Dont have a account? <a href="#" onclick="hideSign();">Sign up</a></div>
-		</form>
-	</section>
-
 	<section class="hasSigned"> 
-		<form class="form3">
+		<form class="form2">
 			<h4 class="hasSignText">noone has signed in</h4>
 			<div><a href="#" onclick="deleteInfo();" style="color:red;">Delete account</a></div>
+			<input class="close-btn" value="Close" onclick="openmenu();">
 		</form>
 	</section>
 	<!-- navigation bar ends -->
@@ -85,7 +76,7 @@
 			<div class="row">
 				<div class="product" id="product1">
 					<div class="product-img">
-						<img src="imgs/images/mobile1.png">
+						<img src="imgs/images/mobile2.png">
 					</div>
 					<div class="product-details">
 						<div class="mobile">
@@ -127,11 +118,11 @@
 
 				<div class="product" id="product4">
 					<div class="product-img">
-						<img src="imgs/images/img4.png">
+						<img src="imgs/images/laptop2.png">
 					</div>
 					<div class="product-details">
 						<div class="mobile">
-							<h2>GigaByte Presents Mobile</h2>
+							<h2>GigaByte Speakers</h2>
 						</div>
 						<div class="Buy-btn">
 							<a href="pages/buyMobile.html" target="_blank">Buy now</a>
@@ -175,7 +166,7 @@
 					<h2>Company</h2>
 				</div>
 				<ul>
-					<li><a href="#">Events</a></li>
+					<li><a href="#">Privacy</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Career</a></li>
 				</ul>
@@ -197,8 +188,13 @@
 
 	<!-- cookie text -->
 	<div class="cookieT">
-		<h4>This website uses cookies to improve your experience. We'll assume you're okay with this.</h4>
-
+		<div>
+			<h2>This website uses cookies</h2>
+			<h4>This website uses cookies to improve your experience.</h4>
+			</div>
+		<!-- <div class="accept"> -->
+			<button class="accept-btn" onclick="hide_cookie_section();">Accept all</button>
+		<!-- </div> -->
 	</div>
 	<!-- cookie text end-->
 </body>
