@@ -137,11 +137,27 @@ function view_purchase_section() {
 		if(temp.style.display == "inline")
 		{
 			temp.style.display = "none"
-			window.location.href = '../index.html';
 		}
 		else
 		{
 			temp.style.display = "inline"
 		}
+	}
+}
+
+function close_view_purchase_section() {
+	window.location.href = '../index.html';
+}
+
+
+function show(index){
+	var temp = document.querySelectorAll(".ans");
+	var temp2 = temp[index];
+	if(temp2.style.display == "inline")
+	{
+		temp2.style.display = "none"
+	}
+	else{
+		temp2.style.display = "inline"
 	}
 }

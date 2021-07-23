@@ -133,6 +133,8 @@
 	color: white;
 	padding: 15px 50px;
 	border: none;
+	width: 80%;
+	margin: 5px 0px;
 }
 .okbtn button:hover{
 	background-color: #8e0513;
