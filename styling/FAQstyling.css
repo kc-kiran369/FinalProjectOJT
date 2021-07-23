@@ -49,7 +49,11 @@
 .cont .ans{
 	display: none;
 }
-.ans h4 ,.que h3 a{
+.ans h4 ,.que h3 button{
+	font-size: 1.1em;
+	border: none;
+	background-color: transparent;
+	padding: 10px 0px;
 	color: #0478D7;;
 }
 strong{
