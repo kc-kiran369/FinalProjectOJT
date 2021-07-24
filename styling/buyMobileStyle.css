@@ -110,20 +110,23 @@
 }
 
 .purchase-section{
-	display: none;
+	/*display: none;*/
 	padding: 20px;
 	position: fixed;
 	top: 40%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%) scale(0);
 	background-color: #56CD6C;
 	border-radius: 10px;
+	transition: all 0.4s ease;
+}
+.purchase-section.active{
+	transform: translateX(-50%) scale(1);
 }
 .purchase-section .title {
 	text-align: center;
 	padding: 30px;
 }
-
 .okbtn{
 	text-align: center;
 }

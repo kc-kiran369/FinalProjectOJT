@@ -127,6 +127,12 @@ function hide_cookie_section() {
 
 
 //for credit card information
+function close_view_purchase_section() {
+	document.querySelector(".purchase-section").classList.remove("active");
+}
+
+
+
 function view_purchase_section() {
 	
 	var temp = document.querySelector(".purchase-section");
@@ -134,18 +140,15 @@ function view_purchase_section() {
 
 	if(cr.length != 0)
 	{
-		if(temp.style.display == "inline")
+		if(temp.style.transform != "scale(1)")
 		{
-			temp.style.display = "none"
-		}
-		else
-		{
-			temp.style.display = "inline"
+			temp.classList.add("active");
 		}
 	}
+	// temp.classList.add('active');
 }
 
-function close_view_purchase_section() {
+function goToHome() {
 	window.location.href = '../index.html';
 }
 
