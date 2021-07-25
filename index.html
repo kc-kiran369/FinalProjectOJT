@@ -14,13 +14,11 @@
 	<nav class="nav-bar">
 		<div class="nav-conatiner">
 			<div class="web-logo">
-				<a href="#">
-					<img src="imgs/icons/logo.png">
-				</a>
+				<a href="#"><img src="imgs/icons/logo.png"></a>
 			</div>
 			<div class="nav-links">
 				<ul class="nav-lists"> 
-					<li class="nav-link"><a href="#">News</a></li>
+					<li class="nav-link"><a href="pages/news.html" target="_blank">News</a></li>
 					<li class="nav-link"><a href="#footer-row">Contacts</a></li>
 					<li class="nav-link"><a href="#products">Products</a></li>
 					<li id="sign-up-icon"><a href="#" onclick="openmenu();"><i class="material-icons">
@@ -29,13 +27,17 @@
 			</div>
 		</div>
 	</nav>
+	<!-- navigation bar ends -->
+
+
+	<!----------- signup section ------->
 	<section class="signup"> 
 		<form class="form1">
 			<input class="input-field" id="Fname" type="text" placeholder="First Name" required>
 			<input class="input-field" id="Lname" type="text" placeholder="Last Name" required>
 			<input class="input-field" id="Femail" type="email" placeholder="example12@gmail.com" required>
 			<input class="input-field" id="Fpass" type="password" placeholder="Password" required>
-			<input class="submit-btn" id="Fsub" type="submit" value="Sign up" onclick="signup();">
+			<button class="submit-btn" id="Fsub" type="submit" onclick="signup();">Sign in</button>
 			<input class="close-btn" value="Close" onclick="toggle();">
 		</form>
 	</section>
@@ -46,23 +48,24 @@
 			<input class="close-btn" value="Close" onclick="openmenu();">
 		</form>
 	</section>
-	<!-- navigation bar ends -->
+	
 
-	<!-- intro - page -->
+	<!----------- intro - page --------->
 	<div id="slider">
 		<figure>
 			<img src="imgs/images/laptop1.png" id="wallpaper">
 		</figure>
 		<div class="arrow">
-			<h2><a href="#" onclick="changeImg();">⇋</a></h2>
+			<h2><button onclick="changeImg();">⇋</button></h2>
 		</div>
-		<div class="ss">
+		<div class="learn-more">
 			<a href="#products">Learn more</a>
 		</div>
 	</div>
-	<!-- intro - page end-->
+	<!----------- intro - page end --------------->
 
-	<!-- promotions -->
+
+	<!--------------- promotions images---------------->
 	<div class="promoImg"></div>
 	<div class="morepromoImg">
 		<h2>Why GigaByte laptop</h2>
@@ -81,9 +84,10 @@
 			</div>
 		</div>
 	</div>
+	<!--------------- promotions images---------------->
 
 
-	<!-- our products section -->
+	<!--------------- our products section ------------>
 	<div class="products" id="products">
 		<div class="container">
 			<div class="products-title">
@@ -99,7 +103,7 @@
 							<h2>GigaByte Redwave P110</h2>
 						</div>
 						<div class="Buy-btn">
-							<a href="pages/buyMobile.html" target="_blank">Learn more</a>
+							<a href="pages/PurchaseMobile.html" target="_blank">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -113,7 +117,7 @@
 							<h2>GigaByte Notepad Laptop</h2>
 						</div>
 						<div class="Buy-btn">
-							<a href="pages/buyMobile.html" target="_blank">Learn more</a>
+							<a href="pages/PurchaseLaptop.html" target="_blank">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -127,7 +131,7 @@
 							<h2>GigaByte FHD TV</h2>
 						</div>
 						<div class="Buy-btn">
-							<a href="pages/buyMobile.html" target="_blank">Learn more</a>
+							<a href="pages/PurchaseTV.html" target="_blank">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -141,22 +145,23 @@
 							<h2>GigaByte Speakers</h2>
 						</div>
 						<div class="Buy-btn">
-							<a href="pages/buyMobile.html" target="_blank">Learn more</a>
+							<a href="pages/PurchaseSpeaker.html" target="_blank">Learn more</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- our products section -->
+	<!------------------------------ our products section ----------------------------->
 
 
-	<!-- footer section -->
+
+	<!--------------------------------- footer section ------------------------------->
 	<footer>
 		<div id="footer-row">
 
-			<div class="footer-col" id="footer-col1">
-				<div class="F-title" id="About">
+			<div class="footer-col">
+				<div class="F-title">
 					<h2>About us</h2>
 				</div>
 				<div class="AboutUsP">
@@ -165,8 +170,8 @@
 				</div> 
 			</div>
 
-			<div class="footer-col" id="footer-col2">
-				<div class="F-title" id="Contact">
+			<div class="footer-col">
+				<div class="F-title">
 					<h2>Contact</h2>
 				</div>
 				<ul>
@@ -177,8 +182,8 @@
 				</ul>
 			</div>
 
-			<div class="footer-col" id="footer-col3">
-				<div class="F-title" id="Company">
+			<div class="footer-col">
+				<div class="F-title">
 					<h2>Company</h2>
 				</div>
 				<ul>
@@ -188,8 +193,8 @@
 				</ul>
 			</div>
 			
-			<div class="footer-col" id="footer-col4">
-				<div class="F-title" id="receive">
+			<div class="footer-col">
+				<div class="F-title">
 					<h2>Receive Updates</h2>
 				</div>
 				<div class="Receive">
@@ -208,11 +213,15 @@
 		<div>
 			<h2>This website uses cookies</h2>
 			<h4>This website uses cookies to improve your experience.</h4>
-			</div>
-		<!-- <div class="accept"> -->
-			<button class="accept-btn" onclick="hide_cookie_section();">Accept all</button>
-		<!-- </div> -->
+		</div>
+		<button class="accept-btn" onclick="hide_cookie_section();">Accept all</button>
 	</div>
 	<!-- cookie text end-->
+
+
+	<!-- copyright thing -->
+	<div>
+		<h4>© 2021 GigaByte | All Right Reserved</h4>
+	</div>
 </body>
 </html>

@@ -42,7 +42,8 @@ function hasSignedin(){
 		if(hasSignVar.style.display == "inline")
 		{
 			hasSignVar.style.display = "none"
-		}else{
+		}
+		else{
 			hasSignVar.style.display ="inline"
 		}
 	}
@@ -97,25 +98,9 @@ function signup(){
 		localStorage.setItem("password" , password);
 
 		document.querySelector(".signup").style.display = "none"
-		openmenu();	
+		hasSignedin();	
 	}
 }
-
-
-// <<<____unused code_____>>>
-// function for hiding signup section 
-// function hideSign(){
-// 	var sign = document.querySelector(".signup");
-// 	var signin = document.querySelector(".signin");
-// 	if( sign.style.display == "inline")
-// 	{
-// 		sign.style.display = "none"
-// 		signin.style.display ="inline"
-// 	}else{
-// 		sign.style.display = "inline"
-// 		signin.style.display ="none"
-// 	}	
-// }
 
 
 // function for changing image of front page
