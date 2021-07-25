@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Raleway;
+}
+.nav{
+	height: 85px;
+	position: relative;
+	background-color: white;
+}
+.rtn-btn{
+	margin: 0px 20px;
+	position: absolute;
+	top:50% ;
+	transform: translateY(-50%);
+}
+.rtn-btn a{
+	color: black;
+	padding: 20px 40px;
+	border: 1px solid transparent;
+}
+.rtn-btn a:hover{
+	transition: all 0.1s linear;
+	border-bottom: 2px solid black;
+	border-radius: 2px;
+}
+
+.container{
+	padding:30px 40px;
+	border-bottom: 1px solid black;
+}
+.topic{
+	padding: 20px 0px;
+}
+.content p{
+	text-align: justify;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.del-btn{
+	padding: 30px;
+	text-align: center;
+}
+.del-btn button{
+	padding: 10px 30px;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-color: #C1FAD5;
+	transition: all 200ms linear;
+}
+
+.del-btn button:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}

@@ -54,8 +54,8 @@
 	width: 400px;
 }
 .image .images img:hover{
-	cursor: zoom-in;
 	transition: all 0.5s ease-out;
+	cursor: zoom-in;
 	transform: scale(1.3);
 }
 .details{
@@ -143,4 +143,3 @@
 	background-color: #8e0513;
 	cursor: pointer;
 }
-

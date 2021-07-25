@@ -6,7 +6,7 @@ function openmenu(){
 	name = localStorage.getItem("name");
 
 	//open signup section if name is none(default) or null
-	if(name=="none" || name==" "){
+	if(name=="none" || name==" " || name === "null"){
 			toggle();
 	}
 	//else enable user has signed in
@@ -50,8 +50,8 @@ function hasSignedin(){
 
 
 //delete signup info
-//actually changes value to none
-function deleteInfo() {
+// changes value to none
+function resetInfo() {
 
 	//set all info to none
 	localStorage.setItem("name" , "none");
@@ -63,6 +63,17 @@ function deleteInfo() {
 	//popup signup section and disable user has signed in window
 	document.querySelector(".hasSigned").style.display = "none"
 	document.querySelector(".signup").style.display = "inline"
+}
+
+function deleteInfo() {
+
+	//set all info to none
+	localStorage.removeItem("name");
+	localStorage.removeItem("Fname");
+	localStorage.removeItem("Lname");
+	localStorage.removeItem("email");
+	localStorage.removeItem("password");
+	alert("Information Successfully Deleted");
 }
 
 
@@ -147,7 +158,6 @@ function view_purchase_section() {
 	}
 	// temp.classList.add('active');
 }
-
 function goToHome() {
 	window.location.href = '../index.html';
 }

@@ -16,7 +16,7 @@ html{
 /*-----------NAV BAR STYLING----------*/
 .nav-bar{
 	background-color: #EEEEEE;
-	height: 85px;
+	height: 70px;
 	position: relative;
 }
 .nav-conatiner{
@@ -38,21 +38,16 @@ html{
 	transform: translateY(-60%);
 	right: 2%;
 }
-.nav-lists{
-	list-style: none;
-}
 .nav-link{
-	border: 3px solid transparent;
 	display: inline;
-	transition: border-bottom 0.4s linear;
-	padding-bottom: 10px;
 }
 .nav-link a{
-	padding: 10px 20px ;
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	transition: border 0.2s linear;
 }
-.nav-link:hover{
-	border-bottom: 2px solid black;
-	border-radius: 5px;
+.nav-link a:hover{
+	border: 1px solid black;
 }
 #sign-up-icon{
 	margin: 3px 10px;
@@ -64,30 +59,21 @@ html{
 }
 
 
-/*sign up section*/
+/*..........sign up section.............*/
 .signup{
 	display: none;
 	background-color: white;
 	position: fixed;
-	top: 85px;
+	top: 70px;
 	right: 0px;
 	z-index: 4;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-/*.signin{
-	display: none;
-	background-color: white;
-	position: fixed;
-	top: 85px;
-	right: 0px;
-	z-index: 4;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}*/
 .hasSigned{
 	display: none;
 	background-color: white;
 	position: fixed;
-	top: 85px;
+	top: 70px;
 	right: 0px;
 	z-index: 4;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -178,11 +164,11 @@ html{
 	width:20%;
 	float : left;
 }
-/*intro page end*/
+/*...........intro page end..............*/
 
 
 
-/*banner section*/
+/*.............banner section............*/
 .promoImg{
 	background-image: url(../imgs/images/banner.png);
 	background-size: cover;
@@ -209,11 +195,11 @@ html{
 .pics div img:hover{
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-/*banner section end*/
+/*..............banner section end.............*/
 
 
 
-/*<!-- "our products" section -->*/
+/* .........."our products" section.............*/
 .products{
 	background-color: white;
 }
@@ -261,7 +247,7 @@ html{
 	transition: all 0.2s linear;
 	background-color: rgb(50, 50, 50);
 }
-/*<!-- our products section end-->*/
+/*................our products section end................*/
 
 
 /*footer and links*/
