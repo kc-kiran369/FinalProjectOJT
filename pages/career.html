@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GigaByte career</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.row{
+			display: grid;
+			grid-template-columns: repeat(3, 50vw);
+			height: 100vh;
+		}
+		.topic h2{
+			position: absolute;
+			top: 25%;
+			left: 18%;
+			transform: translateX(50%);
+		}
+		.form{
+			position: absolute;
+			left: 13.33%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		form input{
+			text-align: center;
+			display: block;
+			border: 1px solid gray;
+			border-radius: 30px;
+			padding: 10px 30px;
+			margin: 5px 0px;
+			width: 100%;
+			outline: none;
+		}
+		.long-input{
+			height: 100px;
+			border-radius: 5px;
+		}
+
+		.gr2{
+			background-image: url('../imgs/images/background.jpg');
+			background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/images/background.jpg');
+			background-size: cover;
+		}
+		.title{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+			font-size: 50px;
+			color: white;
+			width: 50%;
+		}
+		.title h2{
+			text-align: center;
+		} 
+		.btn{
+			position: absolute;
+			left: 60%;
+			transform: translateX(-50%);
+			padding: 15px 50px;
+			background-color: #3F4A55;
+			border: none;
+			color: white;
+			font-size: 20px;
+		}
+		.btn:hover{
+			background-color: #3F4A55;
+			filter: brightness(0.7);
+			cursor: pointer;
+		}
+		.popup{
+			text-align: center;
+			padding: 30px;
+			border-radius: 5px;
+			background-color: #8BC34A;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) scale(0);
+			color: white;
+			transition: transform 0.4s linear;
+		}
+		.popup h3{
+			padding: 10px 2px;
+		}
+		.disEmail h3{
+			border: 1px solid white;
+		}
+		.OK-btn button{
+			width: 100%;
+			margin: 10px 0px;
+			border: none;
+		}
+		.OK-btn button:hover{
+			background-color: #DDD;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="row">
+			<div class="gr1">
+				<div class="topic">
+					<h2>Join us</h2>
+				</div>
+				<div class="form">
+					<form>
+						<input type="text" placeholder="Full Name">
+						<input type="email" id="email" placeholder="Email">
+						<input class="long-input" type="text" placeholder="What makes you suitable for us">
+						<imput type="button" class="btn" onclick="prompt();">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="gr2">
+				<div class="title">
+					<h2>Work with us</h2>
+				</div>
+			</div>
+		</div>
+		<div class="popup">
+			<div class="text">
+				<h3>We will contact you through your email address</h3>
+				<div class="disEmail">
+					<h3 class="E-text">kckiran0690@gmail.com</h3>
+				</div>
+				<div class="OK-btn">
+					<button onclick="closePrompt();"><h3>OK</h3></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	function prompt() {
+		var win = document.querySelector(".popup");
+		var email = document.querySelector("#email").value;
+		document.querySelector(".E-text").innerHTML = email;;
+
+		if(email!="" && email!="null"){
+			win.style.transform = "translate(-50%,-50%) scale(1)"
+		}
+	}
+	function closePrompt() {
+		var win = document.querySelector(".popup");
+			win.style.transform = "translate(-50%,-50%) scale(0)"
+			window.location.href = '../index.html';
+	}
+</script>
+</html>
