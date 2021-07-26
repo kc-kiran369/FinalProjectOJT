@@ -12,9 +12,22 @@
 .rtn-btn{
 	padding: 0px 30px;
 }
+.rtn-btn a{
+	text-decoration: none;
+	color: black;
+	padding: 20px 40px;
+	border: 1px solid transparent;
+}
+.rtn-btn a:hover{
+	transition: all 0.1s linear;
+	border-bottom: 2px solid black;
+	border-radius: 2px;
+}
+
+
 
 .container{
-	background-color: black;
+	background-color: #181818;
 }
 .row{
 	display: grid;
@@ -22,7 +35,7 @@
 	grid-gap: 6px;
 }
 .ele{
-	border: 2px solid floralwhite;
+	height: auto;
 	max-height: 40vh;
 	text-align: center;
 	overflow: hidden;
