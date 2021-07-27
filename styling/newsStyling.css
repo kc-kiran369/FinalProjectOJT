@@ -4,7 +4,7 @@
 }
 
 .nav{
-	background-color: lightblue;
+	background-color: #45C6FC;
 	padding: 20px 0px;
 	display: grid;
 	grid-template-columns: repeat(2, 40%);
@@ -20,7 +20,7 @@
 }
 .rtn-btn a:hover{
 	transition: all 0.1s linear;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
 	border-radius: 2px;
 }
 

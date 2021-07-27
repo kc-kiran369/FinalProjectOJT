@@ -15,12 +15,11 @@ html{
 
 /*-----------NAV BAR STYLING----------*/
 .nav-bar{
-	background-color: rgba(255, 255, 255 , 0.5);
+	background-color: rgba(255, 255, 255 , 1);
 	height: 70px;
 	position: relative;
 	z-index: 10;
-	position: fixed;
-
+	/*position: fixed;*/
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .nav-bar:hover{
@@ -65,7 +64,7 @@ html{
 .material-icons{
 	transform: translateY(30%);
 }
-/*-----------NAV BAR STYLING END----------*/
+/*-----------NAV BAR STYLING END----------
 
 
 /*..........sign up section.............*/
