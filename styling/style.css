@@ -15,10 +15,17 @@ html{
 
 /*-----------NAV BAR STYLING----------*/
 .nav-bar{
-	background-color: #EEEEEE;
+	background-color: #FFF;
 	height: 70px;
 	position: relative;
 	z-index: 10;
+	position: fixed;
+	opacity: 80%;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.nav-bar:hover{
+	transition: opacity 0.2s linear;
+	opacity: 100%;
 }
 .nav-conatiner{
 	width: 100vw;
@@ -130,6 +137,7 @@ html{
 	width: 500%;
 	margin: 0;
 	left: 0;
+	height: 100vh;
 }
 #slider figure img{
 	width:20%;
@@ -155,8 +163,8 @@ html{
 }
 .learn-more{
 	position: absolute;
- 	top: 58%;
- 	left: 18%;
+ 	top: 67%;
+ 	left: 14%;
  	transform: translate(-50%, -50%);
 }
 .learn-more a{
@@ -272,15 +280,22 @@ html{
 	padding-bottom: 20px ;
 	color: black;
 }
+.Fform {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	padding: 0px;
+	margin: 0px;
+}
 .Fform input{
 	height: 40px;
-	width: 60%;
+	outline: none;
 }
 .Fbtn{
-	padding: 10px 20px; 
 	background-color: #AD081B;
 	border: none;
 	color: white;
+	font-size: 25px;
+	padding: 0px 10px;
 }
 /******************footer and links end***********************/
 
