@@ -159,3 +159,11 @@ function show(index){
 		temp2.style.display = "inline"
 	}
 }
+
+
+function open_received_msg() {
+	document.querySelector(".received").style.transform = "translateX(0%)"
+}
+function close_received_msg() {
+	document.querySelector(".received").style.transform = "translateX(100%)"
+}

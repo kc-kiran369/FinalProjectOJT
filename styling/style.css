@@ -235,7 +235,7 @@ html{
 }
 .product:hover{
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	/*box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;*/
+	cursor: all-scroll;
 }
 .product-img img{
 	width: 396px;
@@ -336,3 +336,41 @@ html{
 	background-color: rgb(70, 150, 70) ;
 }
 /********************cookie section end*************************/
+
+
+
+/*---------------email received notiication------------*/
+.received{
+	display: grid;
+	grid-template-columns: 4% 90% 6%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #EEE;
+	z-index: 11;
+	transform: translateX(100%);
+	transition: transform 0.5s ease-out;
+}
+.received .clr{
+	background-color: #45BF6A;
+}
+.received .text{
+	padding: 15px 10px;
+}
+.received .cross{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+.received .cross button{
+	border: none;
+	outline: none;
+	font-size: 25px;
+	background-color: transparent;
+}
+.received .cross button:hover{
+ 	cursor: pointer;
+}
