@@ -7,27 +7,31 @@
 	font-family: Raleway;
 }
 .nav{
-	height: 85px;
+	background-color: #FFF;
+	height: 10vh;
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
 	position: relative;
-	background-color: white;
+	overflow: hidden;
 }
 .rtn-btn{
-	margin: 0px 20px;
-	position: absolute;
-	top:50% ;
-	transform: translateY(-50%);
+	padding: 0px 30px;
 }
 .rtn-btn a{
+	text-decoration: none;
 	color: black;
-	padding: 20px 40px;
+	padding: 30px 40px;
 	border: 1px solid transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
 }
 .rtn-btn a:hover{
-	transition: all 0.1s linear;
-	border-bottom: 2px solid black;
+	transition: all 0.2s linear;
+	background-color: #C3C3C9;
 	border-radius: 2px;
 }
-
 
 
 
