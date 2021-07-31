@@ -181,7 +181,7 @@ html{
 
 /*.............banner section............*/
 .promoImg{
-	background-image: url(../imgs/images/banner.png);
+	background-image: url(../imgs/images/banner.jpg);
 	background-size: cover;
 	height: 100vh;
 }

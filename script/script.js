@@ -108,10 +108,10 @@ var toggles = true;
 function changeImg(){
 
 	if(toggles === true){
-		document.getElementById('wallpaper').src = "imgs/images/mobile1.png";
+		document.getElementById('wallpaper').src = "imgs/images/mobile1.jpg";
 	}
 	else{
-		document.getElementById('wallpaper').src = "imgs/images/laptop1.png";
+		document.getElementById('wallpaper').src = "imgs/images/laptop1.jpg";
 	}
 	toggles = !toggles;
 }
