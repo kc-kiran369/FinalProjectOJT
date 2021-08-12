@@ -86,7 +86,7 @@
 	border-radius: 0;
 	border: 1px solid black;
 }
-.proceed .Cnum{
+.proceed .Cnum , .proceed .address{
 	padding: 7px 3px;
 	border-radius: 0;
 	border: 1px solid black;

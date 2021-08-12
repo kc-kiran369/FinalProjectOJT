@@ -133,8 +133,9 @@ function view_purchase_section() {
 	
 	var temp = document.querySelector(".purchase-section");
 	var cr = document.querySelector(".Cnum").value;
+	var add = document.querySelector(".address").value;
 
-	if(cr.length != 0)
+	if(cr.length != 0 && add.length != 0)
 	{
 		if(temp.style.transform != "scale(1)")
 		{
